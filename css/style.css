@@ -265,7 +265,7 @@ table {
 .header-text__city {
   display: block;
   font-size: 13px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .header-text__phone {
@@ -276,6 +276,72 @@ table {
   font-family: 'Museo Sans Bold', sans-serif;
 }
 
+.main {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.main-wrap {
+  display: flex;
+}
+
+.main-text {
+  flex-basis: 50%;
+}
+
+.main-text__title {
+  font-size: 41px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  margin-bottom: 50px;
+  margin-top: 15px;
+  line-height: 55px;
+}
+
+.main-text__title span {
+  font-size: 20px;
+  display: block;
+  margin-top: 20px;
+}
+
+.main-image {
+  flex-basis: 50%;
+}
+
+.main-advantages {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+}
+
+.main-advantages__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.main-advantages__img {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ffd200;
+  margin-right: 30px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-advantages__img-1 {
+  background-image: url("../img/main-img/clock.png");
+}
+
+.main-advantages__img-2 {
+  background-image: url("../img/main-img/calculator.png");
+}
+
+.main-advantages__img-3 {
+  background-image: url("../img/main-img/paint-board.png");
+}
+
 body {
   font-family: "Museo Sans Light";
   color: #333333;
@@ -284,4 +350,8 @@ body {
 .container {
   width: 1170px;
   margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
 }
