@@ -245,6 +245,21 @@ table {
   outline: none;
 }
 
+.input {
+  font-size: 15px;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+}
+
+.input:focus {
+  border: 1px solid #aaaaaa;
+}
+
+.input:hover {
+  border: 1px solid #aaaaaa;
+}
+
 .header-wrap {
   display: flex;
   justify-content: space-between;
@@ -340,6 +355,103 @@ table {
 
 .main-advantages__img-3 {
   background-image: url("../img/main-img/paint-board.png");
+}
+
+.feedback {
+  padding: 94px 0;
+  background: url("../img/feedback-bg.jpg") no-repeat center left 1000px;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.feedback:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  z-index: -1;
+}
+
+.form {
+  max-width: 575px;
+}
+
+.form__title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 35px;
+  margin-bottom: 45px;
+}
+
+.form__subtitle {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.form__input {
+  width: 270px;
+  margin-bottom: 23px;
+  outline: none;
+}
+
+.form__input:first-child {
+  margin-right: 30px;
+}
+
+.form__button {
+  padding: 27px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+}
+
+.desc {
+  display: flex;
+  margin-top: 26px;
+  max-width: 553px;
+  justify-content: space-between;
+}
+
+.desc__title {
+  width: 235px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.desc__subtitle {
+  width: 192px;
+  font-size: 15px;
+  line-height: 24px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.desc__subtitle span {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.desc__subtitle:before {
+  content: '';
+  background-image: url("../img/phone.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+  position: absolute;
+  left: -60px;
+  top: 5px;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  border: 2px solid #cccccc;
+  vertical-align: middle;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
 }
 
 body {

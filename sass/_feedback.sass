@@ -1,0 +1,73 @@
+.feedback
+	padding: 94px 0
+	background: url('../img/feedback-bg.jpg') no-repeat center left 1000px
+	background-size: contain
+	position: relative
+	z-index: 1
+	&:before
+		content: ''
+		left: 0
+		top: 0
+		width: 50%
+		height: 100%
+		background-color: #fff 
+		position: absolute
+		z-index: -1 
+
+.form
+	max-width: 575px
+	&__title
+		font-size: 24px
+		+bold
+		line-height: 35px
+		margin-bottom: 45px
+	&__subtitle
+		display: block 
+		margin-bottom: 50px
+	&__input
+		width: 270px
+		margin-bottom: 23px
+		outline: none
+		&:first-child
+			margin-right: 30px
+	&__button
+		padding: 27px
+		display: block
+		width: 100%
+		font-size: 16px
+.desc
+	display: flex
+	margin-top: 26px
+	max-width: 553px
+	justify-content: space-between
+	&__title
+		width: 235px
+		font-size: 15px
+		line-height: 24px
+	&__subtitle
+		width: 192px
+		font-size: 15px
+		line-height: 24px
+		position: relative
+		vertical-align: middle
+		span
+			+bold
+		&:before
+			content: ''
+			background-image: url('../img/phone.png')
+			background-repeat: no-repeat
+			background-position: center
+			background-size: 15px
+			position: absolute
+			left: -60px
+			top: 5px
+			min-width: 40px
+			min-height: 40px
+			border-radius: 50%
+			border: 2px solid #cccccc
+			vertical-align: middle
+
+
+
+
+
