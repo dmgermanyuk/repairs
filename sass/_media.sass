@@ -35,7 +35,7 @@
 		&-advantages
 			margin: auto
 		&-image
-			max-width: 550px
+			max-width: 450px
 			margin: auto
 			margin-top: 20px
 	.header
@@ -50,5 +50,117 @@
 	.header__button
 		font-size: 11px
 		padding: 14px 18px
+	.feedback
+		.form
+			margin: auto
+			width: 400px
+			text-align: center
+			input
+				width: 400px
+		.desc
+			display: flex
+			flex-direction: column
+			&__title
+				margin: auto
+				width: 400px
+				line-height: 20px
+				margin-top: 30px
+				font-size: 16px
+				text-align: center
+			&__subtitle
+				margin: auto
+				width: 400px
+				line-height: 20px
+				margin-top: 20px
+				font-size: 16px
+				padding-left: 50px
+				text-align: center
+				&:before
+					left: 0px
+					top: -9px
 
+@media (max-width: 480px)
+	.container
+		width: 90%
+	.main
+		&-wrap
+			flex-direction: column
+		&-text
+			margin: auto
+			&__title
+				text-align: center
+				font-size: 22px
+				line-height: 25px
+			span
+				line-height: 25px
+		&-advantages
+			margin: auto
+			&__text
+				line-height: 20px
+				font-size: 16px
+		&-image
+			max-width: 270px
+			margin: auto
+			margin-top: 20px
 
+	.header
+		&-text
+			&__phone
+				font-size: 13px
+			&__city
+				font-size: 10px
+		&-logo
+			width: 75px
+	.header__button
+		margin-left: -15px
+		font-size: 11px
+		padding: 8px 8px
+		.hidden-xs
+			display: none
+		.button__img
+			display: block
+			max-width: 20px
+
+	.feedback
+		.form
+			margin: auto
+			max-width: 100%
+			text-align: center
+			input
+				max-width: 250px
+				margin-right: 0px
+
+			button
+				max-width: 250px
+				margin: auto
+			&__title
+				margin-top: -50px
+				font-size: 22px
+				line-height: 25px
+			&__subtitle
+				margin-top: -10px
+				font-size: 16px
+				line-height: 25px
+		.desc
+			display: flex
+			flex-direction: column
+			&__title
+				margin: auto
+				width: 280px
+				line-height: 20px
+				margin-top: 30px
+				font-size: 16px
+				text-align: center
+			&__subtitle
+				margin: auto
+				width: 280px
+				line-height: 20px
+				
+				margin-bottom: -50px
+				font-size: 16px
+				text-align: center
+				padding-left: 0px
+				&:before
+					display: none
+	.hidden-xs
+		display: none
